@@ -1,0 +1,11 @@
+orchestrate server start -e <path-.env-file>
+
+orchestrate chat start
+
+orchestrate toolkits import \
+--kind mcp \
+--name weather-mcp-tools \
+--description "MCP tools for weather" \
+--package-root "/Users/diamajumder/Desktop/hello-world/mcpserver" \
+--command '["python3", "weather.py"]' \
+--tools "*"
